@@ -5,7 +5,14 @@ from bs4 import BeautifulSoup
 # Configurações da página
 st.set_page_config(page_title="Chatbot do Relatório", layout="wide")
 st.title("💬 Chatbot do Relatório ENEM 2023")
-
+st.subheader("Pergunte sobre o relatório técnico do ENEM 2023")
+st.markdown(
+    """
+    Este chatbot responde perguntas sobre o relatório técnico do ENEM 2023.
+    Você pode perguntar sobre os dados, análises e resultados apresentados no relatório.
+    Se quiser saber mais, visite: https://lessapwb.github.io/chat-analise-enem2023/.
+    """
+)
 # Testa leitura da chave
 api_key = st.secrets["OPENAI_API_KEY"]
 
@@ -31,7 +38,6 @@ if "mensagens" not in st.session_state:
                 "\n\nSe não souber a resposta, diga que não sabe. "
                 "Se a pergunta não estiver clara, peça para reformular. "
                 "Se não for sobre o relatório, diga que não pode ajudar."
-                "No final da mensagem, diga: 'Se quiser saber mais, visite https://lessapwb.github.io/chat-analise-enem2023/'"
             )
         },
         {
