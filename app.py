@@ -31,6 +31,7 @@ if "mensagens" not in st.session_state:
                 "\n\nSe não souber a resposta, diga que não sabe. "
                 "Se a pergunta não estiver clara, peça para reformular. "
                 "Se não for sobre o relatório, diga que não pode ajudar."
+                "No final da mensagem, diga: 'Se quiser saber mais, visite https://lessapwb.github.io/chat-analise-enem2023/'"
             )
         },
         {
